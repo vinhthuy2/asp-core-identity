@@ -1,0 +1,25 @@
+@LearnCoreIdentity.WebApi_HostAddress = http://localhost:5125
+
+GET {{LearnCoreIdentity.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+###
+
+POST {{LearnCoreIdentity.WebApi_HostAddress}}/login?useCookies=true
+Content-Type: application/json
+
+{
+"email": "thuytran@gmail.com",
+"password": "VinhThuyt12!"
+}
+
+###
+POST {{LearnCoreIdentity.WebApi_HostAddress}}/login?useCookies=false
+Content-Type: application/json
+
+{
+  "email": "thuytran@gmail.com",
+  "password": "VinhThuyt12!"
+}
